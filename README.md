@@ -32,6 +32,15 @@ The system is designed to **gradually respond** to rising temperatures with both
 
 ---
 
+## 🔌 Hardware Prototype
+
+![EV Battery Thermal Management Setup](Images/ev_thermal_setup.jpg)
+
+**Fig: Real-time embedded system prototype showing LPC1768 controller, LM35 sensor, LCD temperature display, active cooling fan, and LED indicators.**
+
+- The LCD shows current temperature and fan speed.
+- The fan (top-right) activates based on thresholds.
+- LEDs on the breadboard simulate load control and temperature status.
 ##  Why Load Indication Was Used
 
 **Loads (LEDs) were used not only for visual status but to simulate the real-world effect of cutting off power-consuming components when battery temperature rises.** This mimics the behavior of battery management systems (BMS) that reduce load to prevent further heating and stabilize temperature.
