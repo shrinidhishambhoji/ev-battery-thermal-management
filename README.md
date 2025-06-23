@@ -32,7 +32,7 @@ The system is designed to **gradually respond** to rising temperatures with both
 
 ---
 
-## 🔌 Hardware Prototype
+##  Hardware Prototype
 
 ![EV Battery Thermal Management Setup](Picture1.jpg)
 
