@@ -1,5 +1,3 @@
-# ev-battery-thermal-management
-
 # Thermal Management for EV Batteries
 
 This project presents an embedded system designed to monitor and manage the temperature of electric vehicle (EV) batteries using an LPC1768 ARM Cortex-M3 microcontroller. It ensures safe operation by activating a cooling mechanism (DC fan) based on real-time temperature readings from an LM35 sensor.
