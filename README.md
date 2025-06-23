@@ -1,4 +1,4 @@
-# ev-battery-thermal-managemnet
+# ev-battery-thermal-management
 
 # Thermal Management for EV Batteries
 
