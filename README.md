@@ -34,7 +34,7 @@ The system is designed to **gradually respond** to rising temperatures with both
 
 ## 🔌 Hardware Prototype
 
-![EV Battery Thermal Management Setup](Images/Picture1.jpg)
+![EV Battery Thermal Management Setup](Picture1.jpg)
 
 **Fig: Real-time embedded system prototype showing LPC1768 controller, LM35 sensor, LCD temperature display, active cooling fan, and LED indicators.**
 
