@@ -6,13 +6,7 @@ This project presents an embedded system designed to monitor and manage the temp
 
 ---
 
-## ⚠️ Why Real EV Batteries Were Not Used
-
-**Due to safety concerns such as flammability, instability at high temperatures, and the risk of thermal runaway, actual lithium-ion EV batteries were not used in this prototype.** Instead, the thermal behavior was simulated using a soldering gun to heat the sensor, and loads (represented by LEDs) were used to mimic operational impact under different temperature levels. This allowed safe, controlled experimentation while demonstrating the system’s response.
-
----
-
-## 🔧 System Overview
+##  System Overview
 
 - **Microcontroller:** LPC1768 (ARM Cortex-M3)
 - **Sensor:** LM35 (temperature sensor, 10mV/°C output)
@@ -23,7 +17,13 @@ This project presents an embedded system designed to monitor and manage the temp
 
 ---
 
-## ❄️ Cooling and Protection Logic
+## ⚠ Why Real EV Batteries Were Not Used
+
+**Due to safety concerns such as flammability, instability at high temperatures, and the risk of thermal runaway, actual lithium-ion EV batteries were not used in this prototype.** Instead, the thermal behavior was simulated using a soldering gun to heat the sensor, and loads (represented by LEDs) were used to mimic operational impact under different temperature levels. This allowed safe, controlled experimentation while demonstrating the system’s response.
+
+---
+
+##  Cooling and Protection Logic
 
 The system is designed to **gradually respond** to rising temperatures with both **cooling fan control** and **load shedding**, providing visual feedback:
 
@@ -36,7 +36,7 @@ The system is designed to **gradually respond** to rising temperatures with both
 
 ---
 
-## 🔎 Why Load Indication Was Used
+##  Why Load Indication Was Used
 
 **Loads (LEDs) were used not only for visual status but to simulate the real-world effect of cutting off power-consuming components when battery temperature rises.** This mimics the behavior of battery management systems (BMS) that reduce load to prevent further heating and stabilize temperature.
 
@@ -47,7 +47,7 @@ The staged disconnection of loads reflects:
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
 - Automatic real-time thermal monitoring and response
 - Incremental fan control with precision
@@ -58,7 +58,7 @@ The staged disconnection of loads reflects:
 
 
 
-## 📌 Applications
+## Applications
 
 - Battery protection systems in electric vehicles
 - Industrial and renewable energy systems requiring thermal safety
