@@ -17,11 +17,7 @@ This project presents an embedded system designed to monitor and manage the temp
 
 ---
 
-## ⚠ Why Real EV Batteries Were Not Used
 
-**Due to safety concerns such as flammability, instability at high temperatures, and the risk of thermal runaway, actual lithium-ion EV batteries were not used in this prototype.** Instead, the thermal behavior was simulated using a soldering gun to heat the sensor, and loads (represented by LEDs) were used to mimic operational impact under different temperature levels. This allowed safe, controlled experimentation while demonstrating the system’s response.
-
----
 
 ##  Cooling and Protection Logic
 
@@ -53,6 +49,12 @@ The staged disconnection of loads reflects:
 - Incremental fan control with precision
 - Load shedding logic based on temperature thresholds
 - Compact prototype using standard embedded hardware components
+
+---
+
+## Why Real EV Batteries Were Not Used
+
+**Due to safety concerns such as flammability, instability at high temperatures, and the risk of thermal runaway, actual lithium-ion EV batteries were not used in this prototype.** Instead, the thermal behavior was simulated using a soldering gun to heat the sensor, and loads (represented by LEDs) were used to mimic operational impact under different temperature levels. This allowed safe, controlled experimentation while demonstrating the system’s response.
 
 ---
 
