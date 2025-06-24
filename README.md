@@ -50,6 +50,8 @@ The staged disconnection of loads reflects:
 
 ---
 
+https://github.com/shrinidhishambhoji/ev-battery-thermal-managemnet/blob/main/ev-thermal-management.pdf
+
 ##  Key Features
 
 - Automatic real-time thermal monitoring and response
