@@ -50,12 +50,12 @@ The staged disconnection of loads reflects:
 
 ---
 
-## 📁 Files
+## Files
 
 - [`main.c`](temperature_keil_thermal_management.c) – LPC1768 firmware code
 - [`minor_embedded_report.pdf`](ev-thermal-management.pdf) – Full project documentation
 
-
+---
 
 ##  Key Features
 
