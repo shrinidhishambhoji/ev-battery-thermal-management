@@ -56,7 +56,6 @@ The staged disconnection of loads reflects:
 - [`minor_embedded_report.pdf`](ev-thermal-management.pdf) – Full project documentation
 
 
-https://github.com/shrinidhishambhoji/ev-battery-thermal-managemnet/blob/main/ev-thermal-management.pdf
 
 ##  Key Features
 
