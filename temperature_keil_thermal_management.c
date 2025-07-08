@@ -11,7 +11,7 @@ int main(void)
     int fanSpeed;
     unsigned char Msg3[11] = {"Temperature"};
     unsigned char Msg4[14] = {"Fan Speed"};
-
+     //added comments
     SystemInit();
     SystemCoreClockUpdate();
 
@@ -24,10 +24,10 @@ int main(void)
     // Configure additional GPIOs
     LPC_PINCON->PINSEL3 &= ~(0x03 << 30); // P1.31 as GPIO
     LPC_GPIO1->FIODIR |= (1 << 31);       // P1.31 as output
-   
+
     LPC_PINCON->PINSEL3 &= ~(0x03 << 28); // P1.30 as GPIO
     LPC_GPIO1->FIODIR |= (1 << 30);       // P1.30 as output
-    
+
 
     LPC_PINCON->PINSEL1 &= ~(0x03<<16); // P0.24 as GPIO
     LPC_GPIO0->FIODIR |= (1<<24);       // P0.24 as output
@@ -59,7 +59,7 @@ int main(void)
     {
 			 LPC_GPIO1->FIOSET = (1 << 31);        // P1.31 set high initially
        LPC_GPIO1->FIOSET = (1 << 30);        // P1.30 set high initially
-        LPC_ADC->ADCR = (1<<0)|(1<<21)|(1<<24);  // ADC0.0, start conversion and operational  
+        LPC_ADC->ADCR = (1<<0)|(1<<21)|(1<<24);  // ADC0.0, start conversion and operational
         for(i=0;i<2000;i++);  // Delay for conversion
         while((adc_temp = LPC_ADC->ADGDR) == 0x80000000);  // Wait till 'done' bit is 1, indicates conversion complete
         adc_temp = LPC_ADC->ADGDR;
@@ -76,14 +76,14 @@ int main(void)
         {
             fanSpeed = 0;
             LPC_GPIO0->FIOCLR = (1<<24);  // Set P0.24 low...fan off
-            LPC_GPIO0->FIOCLR = (1<<26);  
+            LPC_GPIO0->FIOCLR = (1<<26);
             LPC_GPIO0->FIOCLR = (1<<27);
             LPC_GPIO0->FIOCLR = (1<<28);
             LPC_GPIO0->FIOSET = (1<<25);  // Set P0.25 high...white led on
         }
         else
         {
-            LPC_GPIO0->FIOCLR = (1<<25);  // white led low 
+            LPC_GPIO0->FIOCLR = (1<<25);  // white led low
             LPC_GPIO0->FIOCLR = (1<<24);  // fan off
         }
 
@@ -94,11 +94,11 @@ int main(void)
             LPC_GPIO0->FIOCLR = (1<<25);
             LPC_GPIO0->FIOCLR = (1<<27);
             LPC_GPIO0->FIOCLR = (1<<28);
-            LPC_GPIO0->FIOSET = (1<<26);  // Set P0.26 high...yellow led on 
+            LPC_GPIO0->FIOSET = (1<<26);  // Set P0.26 high...yellow led on
         }
         else
         {
-            LPC_GPIO0->FIOCLR = (1<<26);  // yellow led low 
+            LPC_GPIO0->FIOCLR = (1<<26);  // yellow led low
         }
 
         if (temperature >= 33.0 )
@@ -115,7 +115,7 @@ int main(void)
         }
         else
         {
-            LPC_GPIO0->FIOCLR = (1<<27);  // green led low 
+            LPC_GPIO0->FIOCLR = (1<<27);  // green led low
         }
 
         if (temperature >= 36.0)
@@ -133,7 +133,7 @@ int main(void)
         }
         else
         {
-            LPC_GPIO0->FIOCLR = (1<<28);  // red led low 
+            LPC_GPIO0->FIOCLR = (1<<28);  // red led low
         }
 
         for(i=0;i<200000;i++);
