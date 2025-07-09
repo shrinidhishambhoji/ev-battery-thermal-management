@@ -11,7 +11,7 @@ int main(void)
     int fanSpeed;
     unsigned char Msg3[11] = {"Temperature"};
     unsigned char Msg4[14] = {"Fan Speed"};
-     //added comments
+    unsigned char Msg4[14] = {"Fan Speed"}; //added extra line
     SystemInit();
     SystemCoreClockUpdate();
 
